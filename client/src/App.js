@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import SaveBooks from "./hoc/SaveBooks";
+
 import SearchBooks from "./hoc/SearchBooks";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -14,8 +14,6 @@ function App() {
                 <Header />
                 <Switch>
                     <Route exact path="/" component={SearchBooks} />
-                    <Route exact path="/saved" component={SaveBooks} />
-                    <Route exact path="/saved/:id" component={SaveBooks} />
                 </Switch>
                 <br />
                 <Footer />
