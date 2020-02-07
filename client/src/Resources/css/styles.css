@@ -9,3 +9,11 @@ p.footer{
     padding-top: 10px;
     font-size: 1.3rem;
 }
+
+.jumbotron{
+    background-image: url("../images/books.jpeg");
+    height: 300px; 
+    width: 100%;
+    padding-top: 10; 
+    text-align: center;
+}

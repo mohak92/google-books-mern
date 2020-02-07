@@ -3,6 +3,7 @@ import API from "../utils/API";
 import { Container, Row, Col } from "../components/Grid";
 import Form from "../components/Form";
 import SearchList from "../components/SearchList"
+import Jumbotron from "../components/Jumbotron";
 
 
 class SearchBooks extends Component {
@@ -65,6 +66,9 @@ class SearchBooks extends Component {
     render() {
         return (
             <Container fluid>
+                <Jumbotron>
+                    <h1 className="text-white">Find Your Favorite Books with GoogleBook API</h1>
+                </Jumbotron>
                 <Container>
                     <Row>
                         <Col size="12">
