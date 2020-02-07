@@ -1,15 +1,23 @@
 import React from "react";
-import { BrowserRouter as Router} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import SaveBooks from "./hoc/SaveBooks";
+import SearchBooks from "./hoc/SearchBooks";
+import Header from "./components/Header";
 import Footer from "./components/Footer";
 import './Resources/css/styles.css'
-import Header from "./components/Header";
+
 
 function App() {
     return (
         <Router>
             <div>
                 <Header />
-                Google Books!
+                <Switch>
+                    <Route exact path="/" component={SearchBooks} />
+                    <Route exact path="/saved" component={SaveBooks} />
+                    <Route exact path="/saved/:id" component={SaveBooks} />
+                </Switch>
+                <br />
                 <Footer />
             </div>
         </Router>
