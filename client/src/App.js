@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import SearchBooks from './pages/SearchBooks';
 import SaveBooks from './pages/SaveBooks';
 import Header from "./components/Header";
@@ -12,10 +12,10 @@ function App() {
         <Router>
             <div>
                 <Header />
-                <Switch>
-                <Route exact path="/" component={SearchBooks}/>
-                <Route exact path="/saved" component={SaveBooks} />
-                </Switch>
+                <Routes>
+                    <Route path="/" element={<SearchBooks />}  exact />
+                    <Route path="/saved" element={<SaveBooks />}  exact />
+                </Routes>
                 <br />
                 <Footer />
             </div>
