@@ -2,7 +2,7 @@
   "name": "google-books-search-mern",
   "version": "1.0.0",
   "engines": {
-    "node": "10.15.3"
+    "node": "14.18.12"
   },
   "description": "",
   "main": "server.js",
