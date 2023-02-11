@@ -30,7 +30,7 @@
   "homepage": "https://github.com/mohak92/google-books-search-mern#readme",
   "devDependencies": {
     "concurrently": "^7.2.1",
-    "nodemon": "^2.0.16"
+    "nodemon": "^2.0.20"
   },
   "dependencies": {
     "axios": "^0.27.2",
